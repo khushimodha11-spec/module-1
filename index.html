@@ -1,23 +1,26 @@
+<!DOCTYPE html>
 <html>
 
 <head>
-    <h1>Text styling</h1>
-
     <style>
-        .typo1 {
-            font: size 30px;
-        }
-
-        .typo2 {
-            font-family: 'tahoma';
+        .col {
+            border: solid black;
         }
     </style>
 </head>
 
-<body>
-    <p class="typo1">this is to explain typography 1</p>
-    <p class="typo2">this is to explain typography 2</p>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
+<body>
+    <h3>grids</h3>
+    <div class="container">
+        <div class="row">
+            <div class="col">column 1</div>
+            <div class="col">column 2</div>
+            <div class="col">column 3</div>
+        </div>
+    </div>
 </body>
 
 </html>
