@@ -1,19 +1,17 @@
 <!DOCTYPE html>
-
-<body>
-    <h1 id="hi"></h1>
-    <p id="myP"></p>
-
-    <script>
-        // My heading:
-        document.getElementById("hi").innerHTML = "Javascript";
-
-
-        // My heading:
-        document.getElementById("myP").innerHTML = "MY FIRST PARAGRAPH";
-
-
-    </script>
-</body>
-
+<html>
+    <head>
+        <title>function</title>  
+    </head>
+    <body>
+     <button onclick="myfunction(5)">execute JS function</button>
+     <script>
+        function myfunction(x, y) {
+            if (y=== undefined) {
+                y = 2;
+            }
+           document.write(x * y);
+        }
+     </script>
+    </body>
 </html>
