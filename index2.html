@@ -1,30 +1,20 @@
+<!DOCTYPE html>
 <html>
 
-<head>
-    <style>
-        div {
-            width: 300px;
-            height: 200px;
-            background-color: blueviolet;
-            border: 1px solid;
-        }
-
-        #mydiv {
-            rotate: 180deg;
-        }
-    </style>
-</head>
-
 <body>
-    <h1>i welcome to codingal</h1>
-
-    <p>ready to learn the rotation method</p>
-    <div>
-        codingal
-    </div>
-    <div id="mydiv">
-        codingal
-    </div>
+    <p>A function can access variables defined inside the functions:</p>
+    <button type="button" onclick="myfunction()">click me!</button>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <script>
+        var b = 5;
+        function myfunction() {
+            var a = 4;
+            document.getElementById("demo").innerHTML = b * a;
+        }
+        document.getElementById("demo1").innerHTML = a;
+        document.getElementById("demo2").innerHTML = b;
+    </script>
 </body>
 
 </html>
