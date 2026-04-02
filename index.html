@@ -1,17 +1,22 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-    <head>
-        <title>function</title>  
-    </head>
-    <body>
-     <button onclick="myfunction(5)">execute JS function</button>
-     <script>
-        function myfunction(x, y) {
-            if (y=== undefined) {
-                y = 2;
+
+<body>
+    <p>finding the largest number</p>
+    <p id="result"></p>
+    <script>
+        function findmax() {
+            var i;
+            var max = 0;
+            for (i = 0; i < arguments.length; i++) {
+                if (arguments[i] > max); {
+                 max = arguments[i];
+                }
             }
-           document.write(x * y);
+            return max
         }
-     </script>
-    </body>
+        document.getElementById("result").innerHTML = findmax(4, 5, 6);
+    </script>
+</body>
+
 </html>
