@@ -1,26 +1,22 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
 
 <head>
-    <style>
-        .col {
-            border: solid black;
-        }
-    </style>
+    <title>javasscript arreys</title>
 </head>
 
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-
 <body>
-    <h3>grids</h3>
-    <div class="container">
-        <div class="row">
-            <div class="col">column 1</div>
-            <div class="col">column 2</div>
-            <div class="col">column 3</div>
-        </div>
-    </div>
+    <h2>arreys in js</h2>
+    <p id="demo"></p>
+    <script>
+        var cars = [
+            "coding",
+            "magic",
+            "learn",
+            12
+        ];
+        document.getElementById("demo").innerHTML = cars[3];
+    </script>
 </body>
 
 </html>
