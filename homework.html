@@ -1,15 +1,35 @@
+<!DOCTYPE html>
 <html>
+>
 
 <body>
-    <script type="">
-        var value = maths.abs(50);
-        document.write("demo test value : " + value + "<br>")
-        var value = maths.acos(-5);
-        document.write("demo1 test value : " + value + "<br>")
-        var value = math.asin(1);
-        document.write("demo2 test value : " + value + "<br>")
+    <h1>types of loop</h1>
+    <P>basic method</P>
+    <p id="demo2"></p>
+    <script>
+        var str = "LaNgUAgE"
+        document.write(str.toUpperCase);
+        document.write("<br>");
+        document.write(str.toLowerCase);
+        document.write(str.startsWith('a'));
+        document.write("<br>");
+
+        // test method -> returns true or false
+        var str1 = "abc"
+        var patt = new RegExp("about");
+        var res = patt.test(str);
+        document.write(res); 
     </script>
-    <p> okay so i crossrefrenced for this i tried my best :( i dont know why the output isnt bieng given out </p>
+
+    <script>
+        var furniture = ["chair", "couch", "table", "bed", "closet"]
+        var text = "";
+        var i;
+        for (i = 0; i < furniture.length; i++) {
+            text += furniture[i] + "<br>"
+        }
+        document.getElementById("demo2").innerHTML = text;
+    </script>
 </body>
 
 </html>
