@@ -1,34 +1,19 @@
 <!DOCTYPE html>
 <html>
->
 
 <body>
-    <h1>types of loop</h1>
-    <P>basic method</P>
-    <p id="demo2"></p>
-    <script>
-        var str = "LaNgUAgE"
-        document.write(str.toUpperCase);
-        document.write("<br>");
-        document.write(str.toLowerCase);
-        document.write(str.startsWith('a'));
-        document.write("<br>");
+    <p>basic math functions </p>
+    <p id="result"></p>
 
-        // test method -> returns true or false
-        var str1 = "abc"
-        var patt = new RegExp("about");
-        var res = patt.test(str);
-        document.write(res); 
-    </script>
-
+    <p id="result2"></p>
     <script>
-        var furniture = ["chair", "couch", "table", "bed", "closet"]
-        var text = "";
-        var i;
-        for (i = 0; i < furniture.length; i++) {
-            text += furniture[i] + "<br>"
-        }
-        document.getElementById("demo2").innerHTML = text;
+        var num1 = 10;
+        var num2 = 20;
+        document.getElementById("result").innerHTML = "the total sum is: " + sum;
+
+        var num3 = 74;
+        var num4 = 56;
+        document.getElementById("result2").innerHTML = "the total sum is: " - sum;
     </script>
 </body>
 
