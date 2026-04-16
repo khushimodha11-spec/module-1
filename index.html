@@ -1,27 +1,30 @@
 <html>
+    <body>
+        <h2>js class</h2>
+        <P>how to use js class</P>
+        <P id="student1"></P>
+        <P id="student2"></P>
+        <script>
+            // creating a class
+            class student {
+                constructor(name, year) {
+                    this.name = name;
+                    this.year = year;
+                }
 
-<body>
-    <p>slcik buttom to get time based greeting</p>
-    <button onclick="myfunction()">try it</button>
-    <p id="hour"></p>
-    <p id="greet"></p>
-    <script>
-        function myfunction() {
-            var greeting;
-            var time = new Date().getHours();
-            if (time < 10) {
-                greeting = "good morning";
+                // age method 
+                age() {
+                    let date = new Date();
+                    return date.getFullYear() - this.year;
+                }
             }
-            else if (time < 20) {
-                greeting = "good day";
-            }
-            else {
-                greeting = "good evening";
-            }
-            document.getElementById("hour").innerHTML = "current hour is : " + time;
-            document.getElementById("greet").innerHTML = greeting;
-        }
-    </script>
-</body>
 
+            // using class with two objects
+            const student1 = new student("riya", 2014);
+            document.getElementById("student1").innerHTML = "my name is " + student1.name + ". i was born in" + student1.year + ". and my age is" + student1.age();
+
+            const student2 = new student("tina", 2018);
+                document.getElementById("student2").innerHTML = "my name is " + student2.name + ". i was born in" + student2.year + ". and my age is "  + student2.age();
+        </script>
+    </body>
 </html>
