@@ -1,16 +1,41 @@
 <html>
 
 <body>
-    <h1>html dom</h1>
-    <p id="demo1"></p>
-    <button type="button" onclick="myfunction()">click me</button>
-    <p id="demo2"></p>
-    <button type="button" onclick="myfunction()">click me</button>
-
-    <script src="script2.js">
-
+    <p>slcik buttom to get time based greeting</p>
+    <button onclick="myfunction()">try it</button>
+    <p id="hour"></p>
+    <p id="greet"></p>
+    <script>
+        function myfunction() {
+            var greeting;
+            var time = new Date().getHours();
+            if (time < 20) {
+                greeting = "hi";
+            }
+            else if (time < 15) {
+                greeting = "good luck";
+            }
+            else {
+                greeting = "goodbye";
+            }
+            document.getElementById("hour").innerHTML = "current hour is : " + time;
+            document.getElementById("greet").innerHTML = greeting;
+        }
     </script>
 
-</body>
+    <script>
+        var a = 8;
+        var b = 1;
+        var c = 13;
+        var d = null;
+        var e; // undefied variable
+        document.write("a and b are equal : " + (a == b));
+        document.write("<br>");
+        document.write("b and c are equal : " + (b == c));
+        Document.write("<br>");
+        document.write("the value of d is : " + d);
+        Document.write("<br>");
+        document.write("the value of e is : " + e);
+    </script>
 
 </html>
