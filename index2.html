@@ -1,20 +1,27 @@
-<html>
-
 <body>
-    <h1> javascript data types </h1>
+    <P id="student1"></P>
+    <P id="student2"></P>
     <script>
-        var a = 8;
-        var b = 10;
-        var c = 10;
-        var d = null;
-        var e; // undefied variable
-        document.write("a and b are equal : " + (a == b));
-        document.write("<br>");
-        document.write("b and c are equal : " + (b == c));
-        Document.write("<br>");
-        document.write("the value of d is : " + d);
-        Document.write("<br>");
-        document.write("the value of e is : " + e);
+        // creating a class
+        class student {
+            constructor(name, year) {
+                this.name = name;
+                this.year = year;
+            }
+
+            // age method 
+            age() {
+                let date = new Date();
+                return date.getFullYear() - this.year;
+            }
+        }
+
+        // using class with two objects
+        const student1 = new student("yoyo", 2004);
+        document.getElementById("student1").innerHTML = "my name is " + student1.name + ". i was born in" + student1.year + ". and my age is" + student1.age();
+
+        const student2 = new student("natalia", 2002);
+        document.getElementById("student2").innerHTML = "my name is " + student2.name + ". i was born in" + student2.year + ". and my age is " + student2.age();
     </script>
 </body>
 
